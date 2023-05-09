@@ -250,8 +250,8 @@ if __name__ == "__main__":
     parser.add_argument('--iou-thres', type=float, default=0.9, help='predicted iou threshold')
     parser.add_argument('--stability-thres', type=float, default=0.8, help='stability score threshold')
     parser.add_argument('--clip-thres', type=float, default=0.9, help='clip threshold')
-    parser.add_argument('--query', type=str, default="", help='image folder')
-    parser.add_argument('--save-path', type=str, default="./results", help='image folder')
+    parser.add_argument('--query', type=str, default="", help='query text')
+    parser.add_argument('--save-path', type=str, default="./results", help='save path')
     
     parser.add_argument('--api', action='store_true', default=False, help='api only mode')
     opt = parser.parse_args()
